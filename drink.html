@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title></title>
+    <style>
+        nav ul{
+            width:100%;
+            background-color: rgba(44,42,39,0.983);
+            list-style-type: none;
+            margin:0;
+            padding:0;
+        }
+        nav ul li{
+            display:inline-block;
+        }
+        .down{
+            position: relative;
+        }
+        .menu a{
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold; /* 글꼴 두껍게 */
+            line-height: 2; /* 높이 조절 */
+        }
+        .menu:hover{
+            background-color:darkorange;
+            color: white;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">음식메뉴(Food)</a></li>
-            <li><a href="drink.html">주류/음료(Drink)</a></li>
+            <li class="down">
+                <div class="menu">
+                <a href="index.html">음식메뉴(Food)</a>
+                </div>
+            </li>
+            <li class="down">
+                <div class="menu">
+                <a href="drink.html">주류/음료(Drink)</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <img src="drink.jpeg" alt="drink 이미지">

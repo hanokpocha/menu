@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title></title>
+    <style>
+        nav ul{
+            width:100%;
+            backgroud-color: rgba(44,42,39,0.983);
+            list-style-type: none;
+            margin:0;
+            padding:0;
+        }
+        nav ul li{
+            display:inline-block;
+        }
+        .down{
+            position: relative;
+        }
+        .menu{
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">음식메뉴(Food)</a></li>
-            <li><a href="drink.html">주류/음료(Drink)</a></li>
+            <li class="down">
+                <div class="menu">
+                <a href="index.html">음식메뉴(Food)</a>
+                </div>
+            </li>
+            <li class="down">
+                <div class="menu">
+                <a href="drink.html">주류/음료(Drink)</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <img src="menu.jpeg" alt="메뉴 이미지">
